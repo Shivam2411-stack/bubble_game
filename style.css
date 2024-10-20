@@ -1,4 +1,4 @@
-/* General Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ html, body {
 
 main {
     width: 100%;
-    height: calc(100vh - 140px); /* Adjusting for header and footer */
+    height: 100%; /* Adjusting for header and footer */
     background-color: rgb(193, 233, 193);
     display: flex;
     justify-content: center;
@@ -91,39 +91,7 @@ main {
     cursor: pointer;
 }
 
-/* Header styling */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
-}
 
-/* Footer styling */
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Links in the footer */
-footer a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Making the game responsive */
 @media (max-width: 768px) {
     #panel {
         width: 90%;
