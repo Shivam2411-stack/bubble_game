@@ -105,9 +105,10 @@ main {
     }
 
     #ptop {
-        padding-left: 10px 
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         gap: 20px;
+        
     }
 }
 
@@ -120,5 +121,6 @@ main {
 
     .elem {
         font-size: 18px;
+        gap: 5px;
     }
 }
