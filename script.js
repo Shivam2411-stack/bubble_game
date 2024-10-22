@@ -6,7 +6,7 @@ for( var i=1;i<=140;i++){
 }
 document.querySelector("#pbtm").innerHTML = clutter;
 }
-var  timer=60;
+var  timer=3;
 function tickingtimer(){
     var timerint = setInterval(function () {
         if(timer>0){
@@ -15,21 +15,16 @@ function tickingtimer(){
         }
         else{
             clearInterval(timerint);
-            var pbmt=document.querySelector('#pbtm');
-            
-            pbmt.innerHTML = `
-            <h1 style="text-align: center;">Game Over</h1>
-            <h3 id="display" style="text-align: center;">Score : ${score}</h3>
-
-        `
-        
-        display.style.marginTop = "30px";
-        ;
-
-        pbmt.style.display = "block";
-        }
+            var overlay2 = document.querySelector('#overlay2')
+            var respop = document.querySelector('#respop');
+            overlay2.style.display='flex';
+            respop.style.display='block';
+            document.querySelector('#scoref').innerHTML=score;
+    
+            }
     }, 1000)
 }
+
 function hitc(){
     var rn = Math.floor(Math.random()*10);
     document.querySelector(".hit").textContent=rn;
@@ -39,9 +34,6 @@ function incresescore() {
     score += 10;
     document.querySelector('.score').textContent=score;
 }
-hitc();
-tickingtimer();
-makeBubble();
 document.querySelector('#pbtm').addEventListener("click",function (dets) {
     var hitnum = parseInt(document.querySelector('.hit').innerHTML);
     let buble = parseInt(dets.target.innerHTML);
@@ -51,3 +43,26 @@ document.querySelector('#pbtm').addEventListener("click",function (dets) {
         makeBubble();
     }
 })
+function start() {
+    
+var pop = document.querySelector('#overlay');
+var inner =  document.querySelector('#cont');
+
+pop.style.display='none';
+inner.style.display='none';
+    hitc();
+tickingtimer();
+makeBubble();
+}
+function restart() {
+    var overlay2 = document.querySelector('#overlay2')
+    var respop = document.querySelector('#respop');
+    
+    overlay2.style.display='none';
+    respop.style.display='none';
+    hitc()
+    tickingtimer();
+    makeBubble();
+    timer = 3;
+}
+

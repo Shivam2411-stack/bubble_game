@@ -1,5 +1,6 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="shortcut icon" href="bube.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
+
     <main>
         <div id="panel">
             <div id="ptop">
@@ -28,7 +30,51 @@
             <div id="pbtm">
                 <script src="script.js"></script>
             </div>
+
         </div>
     </main>
+    <div id="overlay">
+        <div id="cont">
+            <div id="topcont">
+                <p>Bubble Game</p>
+            </div>
+            <div id="mcont">
+                <h3>Instructions</h6>
+                    <p>
+                        Welcome to the Bubble Game! In this game, your goal is to score as many points as possible by
+                        clicking on bubbles. The challenge is simple but fast-paced: click on the bubbles as quickly as
+                        you can within the 60-second time limit. Each bubble you hit will add 10 points to your score,
+                        so make sure to hit as many bubbles as you can before the time runs out!
+<br><br>
+                        The game begins with a 60-second countdown, and you can track your progress with the timer and
+                        score displayed at the top. As the game progresses, your score will increase with every hit.
+                        Precision and speed are key to achieving the highest possible score. When the timer reaches
+                        zero, the game will end, and your final score will be shown on the screen.
+<br><br>
+                        Features of the Game:
+<br>
+                        The game starts with a clear 60-second timer.
+                        Each bubble click rewards you with 10 points.
+                        You can see your hits, timer, and score in real-time at the top of the screen.
+                        The faster and more accurate you are, the higher your score will be.
+                         Good luck!
+                    </p>
+            </div>
+            <button type="button" id="strbtn" onclick="start()">Start Game</button>
+        </div>
+    </div>
+    <div id="overlay2">
+        <div id="respop">
+            <div id="topcont">
+                <p>Bubble Game</p>
+            </div>
+            <div id="mcont">
+            <h1 style="text-align: center;" id="fh1">Game Over</h1>
+            <br>
+            <h3 id="display" style="text-align: center;">Score : <span id="scoref"></span></h3>
+            <button type="button" id="strbtn" onclick="restart()">Restart Game</button>
+        </div>
+    </div>
 </body>
+
 </html>
