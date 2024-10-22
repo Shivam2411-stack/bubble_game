@@ -6,7 +6,7 @@ for( var i=1;i<=140;i++){
 }
 document.querySelector("#pbtm").innerHTML = clutter;
 }
-var  timer=3;
+var  timer=60;
 function tickingtimer(){
     var timerint = setInterval(function () {
         if(timer>0){
@@ -55,6 +55,7 @@ tickingtimer();
 makeBubble();
 }
 function restart() {
+    
     var overlay2 = document.querySelector('#overlay2')
     var respop = document.querySelector('#respop');
     
@@ -63,6 +64,6 @@ function restart() {
     hitc()
     tickingtimer();
     makeBubble();
-    timer = 3;
+    timer = 60;
 }
 
