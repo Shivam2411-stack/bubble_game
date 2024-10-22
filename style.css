@@ -232,7 +232,7 @@ main {
 }
 @media screen and (max-width:700px) {
     #cont{
-        height: 95%;
+        height: 80%;
         width: 80%;
         overflow: hidden;
     }
@@ -283,8 +283,7 @@ main {
     #cont button{
         margin-left: 35%;
         position: fixed;
-        /* bottom: 0; */
-        bottom: 30px;
+        bottom: 81px;
         left: 0px;
         z-index: 9999;
         box-shadow: 0 4px 6px 0.678900px rgba(0, 0, 0, 0.56);
