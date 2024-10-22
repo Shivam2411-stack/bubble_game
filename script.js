@@ -55,7 +55,8 @@ tickingtimer();
 makeBubble();
 }
 function restart() {
-    
+    score = 0;
+    document.querySelector('.score').textContent=score;
     var overlay2 = document.querySelector('#overlay2')
     var respop = document.querySelector('#respop');
     
